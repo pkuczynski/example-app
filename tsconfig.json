@@ -1,0 +1,38 @@
+{
+    "compileOnSave": true,
+
+    "compilerOptions": {
+        "noEmit": true,
+        "sourceMap": true,
+
+        // Strict Type-Checking Option
+        "alwaysStrict": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strict": true,
+        "strictBindCallApply": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": false,
+        "suppressImplicitAnyIndexErrors": true,
+
+        // Linter Checks
+        "allowUnreachableCode": false,
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+
+        // Module Resolution
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "isolatedModules": false,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+
+        // Experimental Options
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true
+    },
+}

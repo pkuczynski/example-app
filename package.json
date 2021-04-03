@@ -1,0 +1,15 @@
+{
+    "name": "example-app",
+    "version": "0.0.1",
+    "private": true,
+    "author": {
+        "name": "Piotr Kuczynski",
+        "email": "piotr.kuczynski@gmail.com"
+    },
+    "scripts": {
+        "start:service": "npm start --workspace=service"
+    },
+    "workspaces": [
+        "service"
+    ]
+}
