@@ -11,8 +11,6 @@ const allowMethods = [...new Set(
         .filter(m => m) as string[]
 )]
 
-console.log(allowMethods)
-
 export const cors = koaCors({
     allowMethods,
     exposeHeaders: ['connection', 'content-length', 'content-type', 'www-authenticate'],

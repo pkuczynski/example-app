@@ -1,0 +1,7 @@
+@use "../theme/page";
+
+.main {
+    max-width: page.$width;
+    margin: 0 auto;
+    padding: 0 page.$padding;
+}

@@ -7,6 +7,7 @@ module.exports = {
     },
     env: {
         'es6': true,
+        'node': true,
         'jest/globals': true
     },
     plugins: [
@@ -109,7 +110,7 @@ module.exports = {
         'strict': 'off',
 
         // https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#supported-rules
-        '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/explicit-function-return-type': ['error', { allowTypedFunctionExpressions: true }],
         '@typescript-eslint/explicit-module-boundary-types': 'error',
         '@typescript-eslint/member-delimiter-style': ['error', { multiline: { delimiter: 'none' } }],
         '@typescript-eslint/naming-convention': [
@@ -148,7 +149,7 @@ module.exports = {
                 format: ['UPPER_CASE']
             }
         ],
-        '@typescript-eslint/no-extra-parens': ['error', 'all', { returnAssign: false, nestedBinaryExpressions: false }],
+        '@typescript-eslint/no-extra-parens': ['error', 'all', { ignoreJSX: 'all', returnAssign: false, nestedBinaryExpressions: false }],
         '@typescript-eslint/no-shadow': 'error',
         '@typescript-eslint/no-unused-vars': ['error', { ignoreRestSiblings: true, varsIgnorePattern: '^_+$' }],
         '@typescript-eslint/no-use-before-define': 'error',
@@ -204,10 +205,12 @@ module.exports = {
         'import/unambiguous': 'error',
 
         // https://github.com/jest-community/eslint-plugin-jest/tree/master/docs/rules
+        'jest/consistent-test-it': 'error',
         'jest/no-conditional-expect': 'off',
         'jest/no-hooks': 'off',
         'jest/prefer-expect-assertions': 'off',
         'jest/lowercase-name': ['error', { ignore: ['describe'] }],
+        'jest/require-top-level-describe': 'error',
 
         // https://github.com/selaux/eslint-plugin-filenames#rules
         'filenames/match-regex': ['error', '^[a-z0-9-]+(\\.(d|test|e2e|schema))?$', true],

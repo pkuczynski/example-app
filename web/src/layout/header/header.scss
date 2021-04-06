@@ -1,0 +1,27 @@
+@use "../../theme/colors";
+@use "../../theme/page";
+
+$height: 84px;
+
+header {
+    display: flex;
+    justify-content: center;
+
+    height: $height;
+
+    background: colors.$white;
+    border-bottom: 3px solid colors.$red;
+    margin-bottom: 20px;
+
+    user-select: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    max-width: page.$width;
+
+    padding: 0 page.$padding;
+}

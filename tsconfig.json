@@ -2,7 +2,7 @@
     "compileOnSave": true,
 
     "compilerOptions": {
-        "noEmit": true,
+        "outDir": "./build/xyz",
         "sourceMap": true,
 
         // Strict Type-Checking Option

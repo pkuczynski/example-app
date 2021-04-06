@@ -7,9 +7,11 @@
         "email": "piotr.kuczynski@gmail.com"
     },
     "scripts": {
-        "start:service": "npm start --workspace=service"
+        "start:service": "npm start --workspace=service",
+        "start:web": "npm start --workspace=web"
     },
     "workspaces": [
-        "service"
+        "service",
+        "web"
     ]
 }
