@@ -1,9 +1,8 @@
 import { Sentry } from './sentry' // import this as early as possible to catch early startup errors
-
 import { logger } from './logger'
 import * as server from './server'
 
-const stop = async (signal: NodeJS.Signals) => {
+const stop = async (signal: NodeJS.Signals): Promise<void> => {
     logger.info('Shutting down', signal)
 
     try {
@@ -36,7 +35,7 @@ process.on('uncaughtException', (error) => {
 process.on('SIGINT', stop)
 process.on('SIGTERM', stop)
 
-server.start().catch((error) => {
+server.start().catch((error): void => {
     Sentry.captureException(error)
 
     logger.error(error.stack)

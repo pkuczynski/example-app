@@ -1,8 +1,8 @@
 export const enum Environment {
-    local = 'local',
-    test = 'test',
-    stage = 'stage',
-    prod = 'prod'
+    LOCAL = 'local',
+    TEST = 'test',
+    STAGE = 'stage',
+    PROD = 'prod'
 }
 
 export interface Config {
@@ -20,6 +20,7 @@ export interface Config {
     }
 }
 
+// eslint-disable-next-line @typescript-eslint/naming-convention
 declare let APP_CONFIG: Config
 
 export const config: Config = APP_CONFIG

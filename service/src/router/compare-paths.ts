@@ -1,6 +1,6 @@
 import { Controller } from '../controllers/controller'
 
-const splitPath = (path: string) => path.split('/').filter((x: string) => x)
+const splitPath = (path: string): string[] => path.split('/').filter((x: string) => x)
 
 type AnyController = Controller<any, any, any>
 

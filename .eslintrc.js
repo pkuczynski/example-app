@@ -252,6 +252,15 @@ module.exports = {
             rules: {
                 'import/unambiguous': 'off'
             }
+        },
+        {
+            files: ['**/.eslintrc.js'],
+            rules: {
+                'filenames/match-regex': 'off',
+                'import/no-commonjs': 'off',
+                'import/unambiguous': 'off',
+                '@typescript-eslint/naming-convention': 'off'
+            }
         }
     ]
 }

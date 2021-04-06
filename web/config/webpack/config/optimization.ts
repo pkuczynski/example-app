@@ -11,6 +11,7 @@ export default (): Partial<webpack.Configuration> => process.env.NODE_ENV === 'p
                     terserOptions: {
                         compress: {
                             toplevel: true,
+                            // eslint-disable-next-line @typescript-eslint/naming-convention
                             drop_console: true
                         },
                         output: {

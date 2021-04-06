@@ -22,6 +22,7 @@ const useApi = <ResponseDataType> (scope: keyof Store, url: string): [CallApiFun
             const res = await fetch(`${config.api.url}${url}`, {
                 ...options,
                 headers: {
+                    // eslint-disable-next-line @typescript-eslint/naming-convention
                     'Content-Type': 'application/json',
                     ...options.headers
                 }

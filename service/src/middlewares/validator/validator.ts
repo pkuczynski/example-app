@@ -39,7 +39,7 @@ export const validator = (schema: RequestSchema): Middleware => {
         [scope]: ajv.compile(schema[scope])
     }), {})
 
-    return (ctx, next) => {
+    return (ctx, next): Promise<any> => {
         Object.keys(validators).forEach((scope) => {
             validate(ctx, scope as ValidatorType, validators[scope])
         })

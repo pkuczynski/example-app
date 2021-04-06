@@ -3,7 +3,7 @@ import { Controller } from '../controllers/controller'
 import { comparePaths } from './compare-paths'
 
 describe('Path comparator', () => {
-    const mapToController = (path: string) => ({
+    const mapToController = (path: string): any => ({
         route: {
             path
         }

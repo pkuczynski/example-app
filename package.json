@@ -8,7 +8,10 @@
     },
     "scripts": {
         "start:service": "npm start --workspace=service",
-        "start:web": "npm start --workspace=web"
+        "start:web": "npm start --workspace=web",
+        "lint": "npm run lint:web && npm run lint:service",
+        "lint:web": "npm run lint --workspace=web",
+        "lint:service": "npm run lint --workspace=service"
     },
     "workspaces": [
         "service",

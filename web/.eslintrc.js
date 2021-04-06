@@ -37,7 +37,7 @@ module.exports = {
     rules: {
         // https://github.com/calm/eslint-plugin-react-intl
         '@calm/react-intl/missing-formatted-message': 'error',
-        '@calm/react-intl/missing-attribute': 'error',
+        '@calm/react-intl/missing-attribute': 'off',
         '@calm/react-intl/missing-values': 'error',
 
         // https://github.com/amilajack/eslint-plugin-compat

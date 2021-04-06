@@ -24,12 +24,12 @@ export const cors = koaCors({
     credentials: true,
     keepHeadersOnError: true,
     origin: process.env.NODE_ENV === 'production'
-        ? (ctx) => {
+        ? (ctx): string => {
             const requestOrigin = ctx.get('origin')
 
             ctx.assert(allowedOrigins.test(requestOrigin), 412, 'Unsupported origin')
 
             return requestOrigin
         }
-        : ctx => ctx.get('origin')
+        : (ctx): string => ctx.get('origin')
 })

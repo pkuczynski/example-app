@@ -2,7 +2,7 @@ import { Config, Environment } from '../../src/config'
 
 export const defaults: Config = {
     title: 'LOCAL',
-    environment: (process.env.APP_ENVIRONMENT as Environment | undefined) || Environment.local,
+    environment: (process.env.APP_ENVIRONMENT as Environment | undefined) || Environment.LOCAL,
     version: process.env.CI_COMMIT_SHORT_SHA || 'local',
 
     api: {

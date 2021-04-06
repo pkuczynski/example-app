@@ -1,4 +1,5 @@
 import { User } from '@example-app/service'
+
 import { createFetchReducer, Fetch } from '../root/fetch/create-fetch-reducer'
 
 export interface Users extends Fetch {

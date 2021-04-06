@@ -1,7 +1,6 @@
 import { Context } from 'koa'
 
 import { Sentry } from '../sentry'
-
 import { logger } from '../logger'
 
 export const sentry = (error: Error, ctx: Context): void => {

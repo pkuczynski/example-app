@@ -11,6 +11,7 @@ export default (): Partial<webpack.Configuration> => ({
             http2: false,
             net: false,
             tls: false,
+            // eslint-disable-next-line @typescript-eslint/naming-convention
             child_process: false
         }
     }

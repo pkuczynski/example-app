@@ -11,7 +11,7 @@ type Stages = {
     [name in keyof typeof Environment]: Partial<Config>
 }
 
-const stages: Stages = { local: defaults, test, stage, prod }
+const stages: Stages = { LOCAL: defaults, TEST: test, STAGE: stage, PROD: prod }
 
 const select = (): Partial<Config> => {
     const appEnvironment = process.env.APP_ENVIRONMENT as Environment | undefined
