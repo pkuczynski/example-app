@@ -3,7 +3,7 @@
 
     // Compiler Options
     "compilerOptions": {
-        "outDir": "./build/web",
+        "outDir": "../build/web",
 
         "target": "es6",
         "jsx": "react",

@@ -1,0 +1,15 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.thumb {
+    margin-right: 10px;
+}
+
+.name {
+    min-width: 250px;
+    min-height: 20px;
+}

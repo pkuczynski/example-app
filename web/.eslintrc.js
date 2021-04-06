@@ -22,8 +22,7 @@ module.exports = {
         'jsx-a11y',
         'promise',
         'react',
-        'react-hooks',
-        'react-svg'
+        'react-hooks'
     ],
     extends: [
         '../.eslintrc.js',

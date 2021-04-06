@@ -3,7 +3,7 @@
 
     // Compiler Options
     "compilerOptions": {
-        "outDir": "./build/service",
+        "outDir": "../build/service",
 
         "target": "es2019",
         "module": "commonjs",

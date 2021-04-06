@@ -1,3 +1,5 @@
 {
-    "header.title": "Beispiel App"
+    "header.title": "Beispiel App",
+    "users.title": "Benutzer",
+    "users.error": "Das Abrufen von Benutzern ist fehlgeschlagen"
 }

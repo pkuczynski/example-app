@@ -4,7 +4,7 @@ import { CustomTransformers } from 'typescript'
 
 export default (): Partial<webpack.Configuration> => ({
     resolve: {
-        extensions: ['.ts', '.tsx']
+        extensions: ['.ts', '.tsx', '.js']
     },
 
     module: {
@@ -16,7 +16,7 @@ export default (): Partial<webpack.Configuration> => ({
                 }
             },
             {
-                test: /\.(ts|tsx)$/,
+                test: /\.(js|ts|tsx)$/,
                 exclude: /node_modules/,
                 use: [
                     {

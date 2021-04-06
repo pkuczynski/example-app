@@ -1,3 +1,5 @@
 {
-    "header.title": "Example App"
+    "header.title": "Example App",
+    "users.title": "Users",
+    "users.error": "There was a problem fetching users"
 }
